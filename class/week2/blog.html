@@ -44,24 +44,40 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-2 height-thick red">
+      <div class="col-md-2 height-thick randomColor">
       </div>
 
-      <div class="col-md-10 height-thick yellow">
+      <div class="col-md-10 height-thick randomColor">
       </div>
 
     </div>
     <div class="row">
-      <div class="col-md-12 height-thin blue">
+      <div class="col-md-12 height-thin randomColor">
       </div>
 
     </div>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        //get a random color between 0 and 255
+        function getRandomColor() {
+          return Math.floor(Math.random() * 255);
+        }
+
+        // get all the elements (divs) with the class randomColor
+        var randomColor = $(".randomColor");
+
+        // loop through all elements; for each element, change the css background color to RGB + three random colors
+        $.each(randomColor, function(index, item) {
+          $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+        })
+
+      })
+    </script>
 </body>
 
 </html>

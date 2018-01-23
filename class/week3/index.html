@@ -1,93 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Website</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Website</title>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style media="screen">
-      .height-thick {
-        height: 300px;
+  <style media="screen">
+    .height-thick {
+      height: 300px;
+    }
+
+    .height-thin {
+      height: 95px;
+    }
+
+    .imageFit {
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .textAlignCenter {
+      text-align: center;
+    }
+
+    .displayBlock{
+      display: block;
+      margin: 0 auto;
+    }
+
+    .flexbox{
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 height-thin">
+        <p class="text-primary">WE USE THIS COLOR FOR PRIMARY</p>
+        <p class="text-danger">WE USE THIS COLOUR FOR DANGER</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 height-thick">
+        <p class="bg-primary">PRIMARY BG</p>
+        <p class="bg-success">SUCCESS BG</p>
+        <p class="bg-info">INFO BG</p>
+        <p class="bg-warning">WARNING BG</p>
+        <p class="bg-danger">DANGER BG</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 height-thin">
+        <img class="imageFit" src="img/errorMessage1.jpeg" alt="errorMessage1">
+      </div>
+      <div class="col-md-3 height-thin">
+        <img class="imageFit" src="img/errorMessage2.png" alt="errorMessage2">
+      </div>
+      <div class="col-md-3 height-thin">
+        <img class="imageFit" src="img/errorMessage3.jpg" alt="errorMessage3">
+      </div>
+      <div class="col-md-3 height-thin">
+        <img class="imageFit" src="img/errorMessage2.png" alt="errorMessage2">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- textAlignCenter centers its children elements-->
+      <div class="col-md-3 height-thin textAlignCenter">
+        <img class="imageFit" src="img/square1.png" alt="square1">
+      </div>
+      <div class="col-md-3 height-thin textAlignCenter">
+        <img class="imageFit" src="img/square1.png" alt="square1">
+      </div>
+      <div class="col-md-3 height-thin textAlignCenter">
+        <img class="imageFit" src="img/square1.png" alt="square1">
+      </div>
+      <div class="col-md-3 height-thin textAlignCenter">
+        <img class="imageFit" src="img/square1.png" alt="square1">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- displayBlock on individual items + margin: auto = centered stuff -->
+      <div class="col-md-3 height-thin">
+        <img class="displayBlock" src="img/food2.png" alt="food2">
+      </div>
+      <div class="col-md-3 height-thin displayBlock">
+        <img class="displayBlock" src="img/food2.png" alt="food2">
+      </div>
+      <div class="col-md-3 height-thin displayBlock">
+        <img class="displayBlock" src="img/food2.png" alt="food2">
+      </div>
+      <div class="col-md-3 height-thin displayBlock">
+        <img class="displayBlock" src="img/food2.png" alt="food2">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- textAlignCenter centers its children elements-->
+      <div class="col-md-3 height-thin flexbox">
+        <img class="imageFit" src="img/square1.png" alt="square1">
+      </div>
+      <div class="col-md-3 height-thin flexbox">
+        <img class="imageFit" src="img/square1.png" alt="square1">
+      </div>
+      <div class="col-md-3 height-thin flexbox">
+        <img class="imageFit" src="img/square1.png" alt="square1">
+      </div>
+      <div class="col-md-3 height-thin flexbox">
+        <img class="imageFit" src="img/square1.png" alt="square1">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 height-thin randomColor">
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //get a random color between 0 and 255
+      function getRandomColor() {
+        return Math.floor(Math.random() * 255);
       }
 
-      .height-thin {
-        height: 95px;
-      }
-    </style>
-  </head>
-  <body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 height-thin randomColor">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12 height-thick randomColor">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3 height-thin randomColor">
-    </div>
-    <div class="col-md-3 height-thin randomColor">
-    </div>
-    <div class="col-md-3 height-thin randomColor">
-    </div>
-    <div class="col-md-3 height-thin randomColor">
-    </div>
-  </div>
+      // get all the elements (divs) with the class randomColor
+      var randomColor = $(".randomColor");
 
-  <div class="row">
-    <div class="col-md-3 height-thin randomColor">
-    </div>
-    <div class="col-md-3 height-thin randomColor">
-    </div>
-    <div class="col-md-3 height-thin randomColor">
-    </div>
-    <div class="col-md-3 height-thin randomColor">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-12 height-thin randomColor">
-    </div>
-  </div>
-
-
-
-</div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        //get a random color between 0 and 255
-        function getRandomColor() {
-          return Math.floor(Math.random() * 255);
-        }
-
-        // get all the elements (divs) with the class randomColor
-        var randomColor = $(".randomColor");
-
-        // loop through all elements; for each element, change the css background color to RGB + three random colors
-        $.each(randomColor, function(index, item) {
-          $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
-        })
-
+      // loop through all elements; for each element, change the css background color to RGB + three random colors
+      $.each(randomColor, function(index, item) {
+        $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
       })
-    </script>
-  </body>
+
+    })
+  </script>
+</body>
+
 </html>

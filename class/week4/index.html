@@ -95,38 +95,75 @@
 
   <script type="text/javascript">
     /*
-        This is a multiline comment
-      */
+                This is a multiline comment
+              */
     // This is a single line comment.
 
 
     //alert("MY BRAND"); // name of a function, then use () to call the function
     // in this case "MY BRAND" is called the 'parameter' -> in this case, it is text
     // text is always within 'single quotes' or "double quotes"
-  /*
-    console.log("Write to the console..........");
+    /*
+      console.log("Write to the console..........");
 
-    // these above functions are "built-in" functions, and we can also define our own functions.
+      // these above functions are "built-in" functions, and we can also define our own functions.
 
-    function myFirstFunction() {
-      console.log("IT'S LIT");
+      function myFirstFunction() {
+        console.log("IT'S LIT");
 
-    } //parentheses means it's a function
-    // whatever is in the curly brackets will run when we call the function or ()
-    // this is just the definition of the function — it won't do anything until you call it
+      } //parentheses means it's a function
+      // whatever is in the curly brackets will run when we call the function or ()
+      // this is just the definition of the function — it won't do anything until you call it
 
-    myFirstFunction(); // This is the function call
-    myFirstFunction(); // We can use this multiple times
-    myFirstFunction(); // We can use this multiple times
+      myFirstFunction(); // This is the function call
+      myFirstFunction(); // We can use this multiple times
+      myFirstFunction(); // We can use this multiple times
 
 
-    function myFunctionWithParameter(name) {
-      console.log("Hello " + name); // This means that whatever 'name' I give to this function, it will do what I want
+      function myFunctionWithParameter(name) {
+        console.log("Hello " + name); // This means that whatever 'name' I give to this function, it will do what I want
+      }
+
+      myFunctionWithParameter("Anderson");
+      myFunctionWithParameter(" , how are you?");
+      */
+
+    //variables defined with var keyword
+    // these are caled Boolean are true or false
+    var myOnOff = true;
+    var isDaytime = false;
+
+    // number values
+    var salary = 100000;
+    var carPrice = 25000.25;
+
+    // Text or String values
+    var emailAddress = "john10mendoza@gmail.com";
+    var sentence = 'The mitochondria is the powerhouse of the cell.';
+    var anotherSentence = "Whose man's is this?";
+
+    var salary1 = 1000000; // this is a number
+    var salary2 = "1000000"; // with quotations, this is now identified as text
+
+    var taxes = 250000;
+
+    console.log("My take home pay is " + (salary1 - taxes));
+    // this is an equation using salary1 as a number value subtracted by taxes
+
+    console.log("1a bunch of info : " + salary + " and " + carPrice + " and even more " + isDaytime);
+    // as seen above, the linking of multiple things is called a concatenation.
+
+    var myConcatenation = "2a bunch of info : " + salary + " and " + carPrice + " and even more " + isDaytime;
+    //it can also be placed as a variable first and then called in the console.
+    console.log(myConcatenation);
+
+    function writeToConsole(myString) {
+      console.log(myString);
+
     }
+    writeToConsole(myConcatenation); // this is how you do it by calling the function
 
-    myFunctionWithParameter("Anderson");
-    myFunctionWithParameter(" , how are you?");
-    */
+    writeToConsole("3" + myConcatenation); // adding this will complete the same function, but adds a "3" at the beginning
   </script>
 </body>
 

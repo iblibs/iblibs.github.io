@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style media="screen">
+    .height2 {
+      height: 350px;
+    }
+
+    .height1 {
+      height: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 height1 randomColor">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 height2 randomColor">
+      </div>
+      <div class="col-md-8 height2 myConsole">
+      </div>
+      <div class="col-md-2 height2 randomColor">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12 height1 randomColor">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script>
+    //dollar sign mean jQuery function
+    //document is ther entire html file as a built-in variable
+    //.ready is an 'event'
+    // the function inside the 'event'
+    //When the document is ready, it will execute the function that is listed
+    $(document).ready(function() {
+      //get the myConsole elements
+      //call the html function
+      //the html function writes html
+      //what we give the html function is a parameter of html code
+      //myConsole is a class we placed on the middle section of row 2
+      $(".myConsole").html("the full sentence is " + fullSentence);
+
+      //by placing another line here, it overwrites the previously placed line
+      //$(".myConsole").html("here is another sentence");
+
+      //by using '.prepend', we can add it to the BEGINNING of the existing html
+      $(".myConsole").prepend("<div class='boldRed'><h1> The mitochondria is the powerhouse of the cell. </h1></div>");
+
+      //by using '.append', we can add it to the END of the existing html
+      $(".myConsole").append("<h2> The mitochondria is the powerhouse of the cell. </h2>");
+    });
+  </script>
+
+
+
+
+  <script>
+    /* write a sentence using arrays
+              concatenate the array in a for loop
+                  output to the console
+                */
+
+    var mitochondriaPowerhouse = ["the", "mitochondria", "is", "the", "powerhouse", "of", "the", "cell"];
+
+    console.log("this is REAL SCIENCE: " + mitochondriaPowerhouse.join(" 👏 "));
+
+
+    //this is the looping part
+    // currently it labels each element under a number, and lists it
+
+    var fullSentence = "";
+    for (var j = 0; j < mitochondriaPowerhouse.length; j = j + 1) {
+      //adding each word togeher into a fullSentence + putting spacing in between the words
+      fullSentence = fullSentence + mitochondriaPowerhouse[j] + " ";
+
+      //output the full sentence
+      console.log("the full sentence is " + fullSentence);
+
+    }
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //get a random color between 0 and 255
+      function getRandomColor() {
+        return Math.floor(Math.random() * 255);
+      }
+
+      // get all the elements (divs) with the class randomColor
+      var randomColor = $(".randomColor");
+
+      // loop through all elements; for each element, change the css background color to RGB + three random colors
+      $.each(randomColor, function(index, item) {
+        $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+      })
+
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    //How to declare an empty Array — Note the square brackets:
+    var myArray = [];
+
+
+    //adding an element to myArray:
+    // Quotes are for a string/text
+    //no quotes are used for number data
+    myArray.push("someData");
+    myArray.push(2468);
+
+    console.log("the value of myArray: "+myArray);
+
+    //declaring an array with values already in it:
+    var myArray = ["a","b","c","d","e","f","g"];
+
+    //reference a specific index in the array —
+    console.log("the value at index 2 : "+ myArray[2]);
+
+
+  //declaring a bunch of random number values:
+  var numberArray = [4,65,32,78,56,89,13,72,55,65];
+  console.log("numberArray "+numberArray);
+
+  //built-in functions with arrays
+
+  //number of elements
+  console.log("the number of elements in numberArray "+numberArray.length);
+
+  //using a semicolon instead of commas
+  console.log("with some text in between "+numberArray.join(" /// "));
+
+
+  //to loop through an array, we need to know three things:
+  // 1. Where to start
+  // 2. Where to end
+  // 3. the increments
+
+  // 'i' is a placeholder value — it is repeating the function until it reaches the number of elements in the named array
+  // starting at index = 0
+  // Do the code block {} as long as 'i' is greater than or < than numberArray.length
+  //next value goes up by 1 (the increment is 1):
+  var sum = 0;
+  for (var i=0;i<numberArray.length;i=i+1){
+    console.log("the current index is "+i);
+    console.log("the value at index "+i+" is "+numberArray[i]);
+
+    //add to the running total
+    sum = sum + numberArray[i];
+    console.log("the current sum is "+sum);
+  }
+  //loop is finished -> we can now get the total
+  console.log("the average is "+ (sum/numberArray.length));
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vertical Flex Grid</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style media="screen">
+    .height1 {
+      height: 100px;
+      list-style-type: none;
+    }
+
+    .height2 {
+      height: 600px;
+    }
+
+    .height3 {
+      height: 150px;
+    }
+
+    .height4{
+      height: 100px;
+    }
+
+    .header{
+      line-height: 90px;
+      background-color: #eee;
+    }
+
+    .footer{
+      line-height: 50px;
+    }
+
+/* center the child element */
+    .flexSingleItem{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .flexNav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .flexNav a{
+      color: black;
+    }
+
+    li{
+      list-style-type: none;
+      text-transform: uppercase;
+    }
+
+    .flexVerticalAlign{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .placeholder{
+        background-color: #222;
+    }
+
+    .placeholder2{
+        background-color: #eee;
+    }
+
+    .placeholderText{
+        color: #eee;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <container>
+    <div class="row">
+      <div class="col-md-12 height1 header">
+        <ul class="flexNav">
+          <li><a href="#">ABOUT</a</li>
+          <li><a href="#">TEAMS</a></li>
+          <li><a href="#">RESEARCH</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 height2 flexVerticalAlign placeholder">
+          <p class="placeholderText">insert text here
+        </div>
+
+        <div class="col-md-6 height2">
+          <!-- PUT NESTED ROW IN HERE -->
+          <div class="row">
+            <div class="col-md-6 height3 pokeBorder flexSingleItem">
+              <div>
+                <img src="img/trevenant.gif" alt="vertical align flex image">
+              </div>
+            </div>
+            <div class="col-md-6 height3 pokeBorder flexSingleItem">
+              <div>
+                <img src="img/charizard.gif" alt="vertical align flex image">
+              </div>
+            </div>
+            <div class="col-md-6 height3 pokeBorder flexSingleItem">
+              <div>
+                <img src="img/delphox.gif" alt="vertical align flex image">
+              </div>
+            </div>
+            <div class="col-md-6 height3 pokeBorder flexSingleItem">
+              <div>
+                <img src="img/haunter.gif" alt="vertical align flex image">
+              </div>
+            </div>
+            <div class="col-md-6 height3 pokeBorder flexSingleItem">
+              <div>
+                <img src="img/tyrantrum.gif" alt="vertical align flex image">
+              </div>
+            </div>
+            <div class="col-md-6 height3 pokeBorder flexSingleItem">
+              <div>
+                <img src="img/aerodactyl.gif" alt="vertical align flex image">
+              </div>
+            </div>
+            <div class="col-md-6 height3 pokeBorder flexSingleItem">
+              <div>
+                <img src="img/hitmontop.gif" alt="vertical align flex image">
+              </div>
+            </div>
+            <div class="col-md-6 height3 pokeBorder flexSingleItem">
+              <div>
+                <img src="img/chesnaught.gif" alt="vertical align flex image">
+              </div>
+            </div>
+            </div>
+          </div>
+            <div class="col-md-2 height2 flexVerticalAlign placeholder">
+              <p class="placeholderText">insert text here
+              </p>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 height4 placeholder2">
+          <ul class="flexNav footer">
+            <li><a href="#">647.111.222</a</li>
+            <li><a href="#">ALL RIGHTS RESERVED</a></li>
+            <li><a href="#">PLEASE HELP SUPPORT MY CHILDREN</a></li>
+          </ul>
+        </div>
+      </div>
+  </container>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //get a random color between 0 and 255
+      function getRandomColor() {
+        return Math.floor(Math.random() * 255);
+      }
+
+      // get all the elements (divs) with the class randomColor
+      var randomColor = $(".randomColor");
+
+      // loop through all elements; for each element, change the css background color to RGB + three random colors
+      $.each(randomColor, function(index, item) {
+        $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+      })
+
+    })
+  </script>
+</body>
+
+</html>

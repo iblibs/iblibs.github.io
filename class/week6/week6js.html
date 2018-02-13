@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style media="screen">
+    .height2 {
+      height: 600px;
+    }
+
+    .height1 {
+      height: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 height1 randomColor">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 height2 randomColor">
+      </div>
+      <div class="col-md-8 height2 myConsole">
+      </div>
+      <div class="col-md-2 height2 randomColor">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12 height1 randomColor">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //get a random color between 0 and 255
+      function getRandomColor() {
+        return Math.floor(Math.random() * 255);
+      }
+
+      // get all the elements (divs) with the class randomColor
+      var randomColor = $(".randomColor");
+
+      // loop through all elements; for each element, change the css background color to RGB + three random colors
+      $.each(randomColor, function(index, item) {
+        $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+      })
+
+    })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      /*IMPORTANT CONCEPT: STRINGS AND ADDITION*/
+      //str means STRING
+      function writeToCenter(str) {
+        $(".myConsole").append("<br>" + str);
+      }
+
+
+      //This is how to write a function with an object
+      function writeObjectToCenter(obj) {
+        $(".myConsole").append("<br />" + JSON.stringify(obj)); // Makes an object into a string
+      }
+
+
+      writeToCenter("<h4>BEST BOY BAND SINCE ONE DIRECTION</h4>");
+
+
+
+      function addNumbers(num1, num2) {
+        var result = num1 + num2;
+
+        return result;
+
+      }
+
+      var firstNumber = 15;
+      var secondNumber = 10;
+      var thirdNumber = addNumbers(firstNumber, secondNumber);
+
+      writeToCenter("third number is " + thirdNumber); //labels the third number with the sum of firstNumber and secondNumber.
+
+      writeToCenter("another number is " + addNumbers(10, 9)); //using the addNumbers with new variables without declaraing them.
+
+
+      // we could also shorten this addition process like this:
+      function addNumbers(num3, num4) {
+        return num3 + num4; // variable is now just return now
+      }
+
+
+      /* IMPORTANT CONCEPT: OBJECTS */
+
+      // Declaring an empty object with {}
+      var myTogekiss = {
+
+        "baseStatTotal": "545",
+        "primaryType": "Fairy",
+        "secondaryType": "Flying",
+        "height": "1.5 m",
+        "weight": "83.8 lbs."
+
+
+      };
+
+      //Adding a new key value pair
+      myTogekiss.region = "Sinnoh"; // Giving it a location/approx area
+      myTogekiss.pokedexNumber = 468; // Giving it a number
+      myTogekiss.immunityToGroundMoves = true; // Giving it a boolean value
+      myTogekiss.typeWeaknesses = ["Electric", "Ice", "Poison", "Rock", "Steel"]; // Giving it an array
+
+
+
+      // calls out the function using JSON.stringify
+      writeObjectToCenter(myTogekiss);
+
+
+//Loop through every key
+      for(var key in myTogekiss){ //taking the key parts of myTogekiss as a "string"
+        writeToCenter("<br /> this key is: "+key+" and the value is "+myTogekiss[key]);
+      }
+
+      //referencing a key this way:
+      writeToCenter("<br /> here is a value = "+myTogekiss["height"]);
+
+      // Actually, the conventional way to do this is called Dot Notation, and is done like this:
+      writeToCenter("<br />  here is the height of this Pokemon: "+myTogekiss.height);
+
+    }) // end of document
+  </script>
+</body>
+
+</html>

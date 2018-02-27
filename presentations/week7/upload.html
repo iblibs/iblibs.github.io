@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- meta viewport tag for responsive design  -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <title>Desktop VS. Mobile - Week 7</title>
+  <!--CSS BEGINS-->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto|Lato');
+
+    body {
+      background-color: #EEEEEE;
+    }
+
+    p {
+      text-align: center;
+      padding: 10px;
+      color: white;
+      line-height: 1.5em;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #wix {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 60px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .navFix {
+      overflow: hidden;
+      width: 95%;
+      height: 60px;
+      position: fixed;
+      /* navbar = fixed and at the top*/
+      top: 0;
+      z-index: 3;
+
+      background-color: #222;
+      -webkit-box-shadow: 10px 11px 13px -10px rgba(34, 34, 34, 0.74);
+      -moz-box-shadow: 10px 11px 13px -10px rgba(34, 34, 34, 0.74);
+      box-shadow: 10px 11px 13px -10px rgba(34, 34, 34, 0.74);
+    }
+
+    .navFix li {
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+      list-style-type: none;
+    }
+
+    .flexNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+      align-items: flex-end;
+    }
+
+    .navlinkStyle {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .navlinkStyle li {
+      padding: 5px;
+    }
+
+    .navlinkStyle a {
+      color: #eee;
+      text-decoration: none;
+    }
+
+    .navlinkStyle a:hover {
+      color: ##bdbdbd;
+      transition: 0.2s ease;
+    }
+
+
+    .indexHeader {
+      background-image: url(/Users/johnmendoza/Desktop/iblibs.github.io/presentations/week7/img/girlAtWindow.jpg);
+      /* 100vh = image header's height will stay in 100% proportion to the viewport's height */
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      /* flexbox controls header text */
+      position: relative;
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      z-index: 2;
+
+    }
+
+    .aboutSection {
+      background-color: #212121;
+      padding: 20px;
+      -webkit-box-shadow: 10px 11px 13px -10px rgba(34,34,34,0.74);
+      -moz-box-shadow: 10px 11px 13px -10px rgba(34,34,34,0.74);
+      box-shadow: 10px 11px 13px -10px rgba(34,34,34,0.74);
+    }
+
+    .aboutSection p {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .separatorImg {
+      background-image: url(/Users/johnmendoza/Desktop/iblibs.github.io/presentations/week7/img/boyWithLaptop.jpg);
+      min-height: 500px;
+      padding: 50px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      background-attachment: fixed;
+      /*parallax*/
+    }
+
+    .sidebar {
+      background-color: #212121;
+      height: 100px;
+    }
+
+    .sidebar li {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .itemStyle {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .itemStyle li {
+      padding: 40px;
+    }
+
+    .itemStyle a {
+      color: #eee;
+      text-decoration: none;
+    }
+
+    .itemStyle a:hover {
+      color: #fff;
+      transition: 0.2s ease;
+    }
+
+    .flexList {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+      align-items: flex-end;
+    }
+
+
+    /*Media Query for responsive design*/
+
+    @media only screen and (max-width: 740px) {
+      h1 {
+        font-size: 6vh;
+      }
+
+      p {
+        font-size: 2vh;
+      }
+
+      a:hover {
+        none;
+      }
+
+      .navFix {
+        width: 100%;
+        height: 75px;
+        background-color: #222;
+      }
+
+      .flexNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .navlinkStyle li {
+        padding: 4px;
+        margin-right: 30px;
+      }
+
+      .sidebar {
+        height: 200px;
+      }
+
+      .flexList {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: flex-end;
+      }
+
+      .itemStyle li {
+        padding: 10px;
+      }
+
+
+    }
+  </style>
+  <!--CSS ENDS-->
+
+</head>
+
+<body>
+  <div class="indexHeader">
+    <h1>You need a website.</h1>
+    <p id="wix">Why not do it yourself with Wix?</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="navFix nav nav-pills">
+        <ul class="navlinkStyle flexNav">
+          <li><a href="#">Option One</a></li>
+          <li><a href="#">Option Two</a></li>
+          <li><a href="#">Option Three</a></li>
+          <li><a href="#">Option Four</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 aboutSection">
+        <div class="textBox">
+          <p>Lorem Khaled Ipsum is a major key to success.</p>
+
+          <p>The key to success is to keep your head above the water, never give up. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch.
+
+            <p>They key is to have every key, the key to open every door. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. In life there will be road blocks but we
+              will over come it. </p>
+            <p>The key to more success is to get a massage once a week, very important, major key, cloth talk.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 separatorImg">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 sidebar">
+        <ul class="itemStyle flexList">
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Key Access</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Copyright of FirstName LastName</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

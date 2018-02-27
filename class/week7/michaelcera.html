@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Lato');
+
+      .height1 {
+        height: 100px;
+      }
+
+    .height2 {
+      height: 900px;
+    }
+
+    body{
+      font-family: Roboto,sans-serif;
+      background-color: #EEEEEE;
+    }
+
+    a{
+      color: white;
+    }
+
+    .headerStyle{
+      background-color: #4CAF50;
+    }
+
+    .headerText{
+      color: #FFFFFF;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 36px;
+      padding: 25px;
+    }
+
+    .navFlex {
+      display: flex;
+      justify-content: space-around;
+      background-color: #8BC34A;
+      padding: 15px;
+    }
+
+    .sidebar{
+      background-color: #C8E6C9;
+    }
+
+    .itemStyle {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .itemStyle li{
+      padding: 30px;
+    }
+
+    .itemStyle a {
+      color: #222;
+    }
+
+    .itemStyle a:hover {
+      color: #508AA8;
+      transition: 0.2s ease;
+    }
+
+    .footerStyle {
+      height: 100px;
+      background-color: #388E3C;
+    }
+
+    .footerFlex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+      align-items: flex-end;
+
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="headerStyle">
+          <h1 class="headerText">Michael Cera 2018 Fansite</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 height1">
+        <ul class="navFlex nav nav-pills">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Rankings</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-7 height2 superbad">
+      </div>
+      <div class="col-md-5 height2 sidebar">
+        <div class="">
+          <ul class="itemStyle">
+            <li><a href="#">Michael Cera</li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+              <li><a href="#">Michael Cera</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 footerStyle">
+        <ul class="footerFlex nav nav-pills">
+          <li><a href="#">Copyright of one person.</a></li>
+          <li><a href="#">Designed by three people.</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //get a random color between 0 and 255
+      function getRandomColor() {
+        return Math.floor(Math.random() * 255);
+      }
+
+      // get all the elements (divs) with the class randomColor
+      var randomColor = $(".randomColor");
+
+      // loop through all elements; for each element, change the css background color to RGB + three random colors
+      $.each(randomColor, function(index, item) {
+        $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+      })
+
+    })
+  </script>
+  <script>
+    // JSON WITH MICHAEL CERA
+    var michaelCera = [{
+        "picture": "img/mCera1.jpg",
+        "name": "Michael Cera",
+        "isHoldingCactus": "false",
+        "isMichaelCera": "Yes"
+      },
+      {
+        "picture": "img/mCera2.jpg",
+        "name": "Michael Cera",
+        "isHoldingCactus": "false",
+        "isMichaelCera": "Yes"
+      },
+      {
+        "picture": "img/mCera3.jpg",
+        "name": "Michael Cera",
+        "isHoldingCactus": "true",
+        "isMichaelCera": "Yes"
+      },
+      {
+        "picture": "img/mCera4.jpg",
+        "name": "Jesse Eisenberg",
+        "isHoldingCactus": "false",
+        "isMichaelCera": "No"
+      },
+      {
+        "picture": "img/mCera5.jpg",
+        "name": "Michael Cera",
+        "isHoldingCactus": "false",
+        "isMichaelCera": "Yes"
+      }
+    ];
+
+    $(document).ready(function() {
+      var html = "<table class='table table-hover bg-success'>" + //here is the looping function
+        "<tr>" +
+        "<th>Icon</th>" +
+        "<th>Name</th>" +
+        "<th>Is he holding a cactus?</th>" +
+        "<th>Is this Michael Cera?</th>" +
+        "</tr>";
+
+      //here is the loop of the array 'cats'
+      for (var i = 0; i < michaelCera.length; i++) {
+        console.log("i " + i);
+        html += "<tr>" +
+          "<td><img src='"+michaelCera[i].picture+"'/></td>"+
+          "<td>" + michaelCera[i].name + "</td>" +
+          "<td>" + michaelCera[i].isHoldingCactus + "</td>" +
+          "<td>" + michaelCera[i].isMichaelCera + "</td>" +
+        "</tr>";
+      }
+
+      html = html + "</table>"; //using += also works in place of html = html...
+      $(".superbad").html(html); // retrieve the string 'html', and output into the class 'output'. then place it within the html file
+    });
+
+  </script>
+</body>
+
+</html>

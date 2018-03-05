@@ -1,0 +1,48 @@
+[
+  {
+    "class":"item active",
+    "name":"Jason Derulo",
+    "age": 28,
+    "isFictionalCharacter": false,
+    "ethnicity": "Haitian",
+    "ifCalledOutJasonWouldReplyWithLastName": true
+
+  },
+
+  {
+    "class":"item",
+    "name":"Jason Voorhees",
+    "age": 71,
+    "isFictionalCharacter": true,
+    "ethnicity": "dead, probably",
+    "ifCalledOutJasonWouldReplyWithLastName": false
+  },
+
+  {
+    "class":"item",
+    "name":"Jason Segel",
+    "age": 38,
+    "isFictionalCharacter": false,
+    "ethnicity": "Caucasian",
+    "ifCalledOutJasonWouldReplyWithLastName": false
+  },
+
+  {
+    "class":"item",
+    "name":"Jason Bourne",
+    "age": 48,
+    "isFictionalCharacter": true,
+    "ethnicity": "AMERICAN",
+    "ifCalledOutJasonWouldReplyWithLastName": false
+  },
+
+  {
+    "class":"item",
+    "name":"Jason Bateman",
+    "age": 49,
+    "isFictionalCharacter": false,
+    "ethnicity": "Caucasian",
+    "ifCalledOutJasonWouldReplyWithLastName": false
+  }
+
+]

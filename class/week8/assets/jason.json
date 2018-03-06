@@ -1,7 +1,7 @@
 [
   {
-    "class":"item active",
     "name":"Jason Derulo",
+    "hairColor": "true",
     "age": 28,
     "isFictionalCharacter": false,
     "ethnicity": "Haitian",
@@ -10,8 +10,8 @@
   },
 
   {
-    "class":"item",
     "name":"Jason Voorhees",
+    "hairColor": true,
     "age": 71,
     "isFictionalCharacter": true,
     "ethnicity": "dead, probably",
@@ -19,8 +19,8 @@
   },
 
   {
-    "class":"item",
     "name":"Jason Segel",
+    "hairColor": true,
     "age": 38,
     "isFictionalCharacter": false,
     "ethnicity": "Caucasian",
@@ -28,8 +28,8 @@
   },
 
   {
-    "class":"item",
     "name":"Jason Bourne",
+    "hairColor": true,
     "age": 48,
     "isFictionalCharacter": true,
     "ethnicity": "AMERICAN",
@@ -37,8 +37,8 @@
   },
 
   {
-    "class":"item",
     "name":"Jason Bateman",
+    "hairColor": true,
     "age": 49,
     "isFictionalCharacter": false,
     "ethnicity": "Caucasian",

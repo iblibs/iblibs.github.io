@@ -1,0 +1,38 @@
+{
+  "1": {
+    "itemId": 1,
+    "johMenTitle": "Toucannon",
+    "johMenType": "Grass/Flying",
+    "johMenImgUrl": "iblibs.github.io/class/week11/img/toucannon.gif"
+  },
+  "2": {
+    "itemId": 2,
+    "johMenTitle": "Araquanid",
+    "johMenType": "Water/Bug",
+    "johMenImgUrl": "iblibs.github.io/class/week11/img/araquanid.gif"
+  },
+  "3": {
+    "itemId": 3,
+    "johMenTitle": "Dhelmise",
+    "johMenType": "Water/Ghost",
+    "johMenImgUrl": "iblibs.github.io/class/week11/img/dhelmise.gif"
+  },
+  "4": {
+    "itemId": 4,
+    "johMenTitle": "Toxapex",
+    "johMenType": "Water/Poison",
+    "johMenImgUrl": "iblibs.github.io/class/week11/img/toxapex.gif"
+  },
+  "5": {
+    "itemId": 5,
+    "johMenTitle": "Golisopod",
+    "johMenType": "Water/Bug",
+    "johMenImgUrl": "iblibs.github.io/class/week11/img/golisopod.gif"
+  },
+  "6": {
+    "itemId": 6,
+    "johMenTitle": "Mudsdale",
+    "johMenType": "Ground",
+    "johMenImgUrl": "iblibs.github.io/class/week11/img/mudsdale.gif"
+  }
+}

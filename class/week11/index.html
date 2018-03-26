@@ -78,6 +78,8 @@
         for (var jsonObj in d) {
           html += "<div data-id='" + jsonObj + "' class='itemContainer'>";
           for (var key in d[jsonObj]) {
+            var str = String(d)[jsonObj][key];
+
             if (key === "itemId") {
               continue;
             }
@@ -100,7 +102,7 @@
           {
           "Anderson 1":"https://andersonguelphjs.github.io/class/week11/myJSON.json",
           "Anderson 2":"https://andersonguelphjs.github.io/class/week11/myJSON2.json",
-          "Mendoza":"https://iblibs.github.io/class/week11/gen7pokemon.json"
+          "Mendoza 3":"https://iblibs.github.io/class/week11/gen7pokemon.json"
         };
         var html="";
 

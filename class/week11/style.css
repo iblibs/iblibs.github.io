@@ -76,6 +76,26 @@ hr{
  }
 
 
+
+
+/*gen 7 pokemon styling*/
+
+.johMenTitle{
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.johMenType{
+text-align: center;
+}
+
+.johMenImgUrl{
+}
+
+
 /*form*/
 
 .ordered{

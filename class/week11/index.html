@@ -78,7 +78,7 @@
         for (var jsonObj in d) {
           html += "<div data-id='" + jsonObj + "' class='itemContainer'>";
           for (var key in d[jsonObj]) {
-            var str = String(d)[jsonObj][key];
+            var str = String(d)[jsonObj][key]; //makes it show up
 
             if (key === "itemId") {
               continue;

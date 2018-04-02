@@ -115,6 +115,14 @@ select{
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+.confirmationMessage{
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+
+}
+
 .proAndPrice{
   background-color:#fff;
   color: #333;

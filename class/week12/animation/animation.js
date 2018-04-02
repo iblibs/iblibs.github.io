@@ -158,11 +158,27 @@ var spriteImages = [{
   //   "height": 200,
   //   "name": "cat"
   // }
-  "spriteMapUrl": "images/snorlax.png",
+  "spriteMapUrl": "images/snorlaxBig.png",
   "numFrames": 10,
-  "width": 750,
-  "height": 72,
+  "width": 1500,
+  "height": 144,
   "name": "pokemon"
+},
+
+{
+"spriteMapUrl": "images/snorlaxBig.png",
+"numFrames": 10,
+"width": 1500,
+"height": 144,
+"name": "pokemon"
+},
+
+{
+"spriteMapUrl": "images/snorlaxBig.png",
+"numFrames": 10,
+"width": 1500,
+"height": 144,
+"name": "pokemon"
 }
 ];
 var animations = []; //an array to hold the currently existing sprite obects

@@ -9,7 +9,7 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,20 +19,36 @@
     <![endif]-->
 
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600');
+
+    body {
+      font-family: Montserrat, sans-serif;
+    }
+
     .headerSection {
       background-color: #222;
-      height: 100vw;
+      height: 50vw;
+      /*keeps it half the size of the screen always*/
+      background-image: url(/Users/johnmendoza/Desktop/iblibs.github.io/o-annie-spratt-197809.jpg);
+      background-position: center center;
+      background-repeat: none;
+      background-size: cover;
     }
 
 
 
-/* NAV BAR STYLING */
+    /* NAV BAR STYLING */
+
     .nav-item {
       margin-left: 50px;
     }
 
-/* PARALLAX IMAGE STYLING */
-    .imageParallax1, .imageParallax2, .imageParallax3, .imageParallax4 {
+    /* PARALLAX IMAGE STYLING */
+
+    .imageParallax1,
+    .imageParallax2,
+    .imageParallax3,
+    .imageParallax4 {
       background-image: url(http://via.placeholder.com/1000x500);
       min-height: 400px;
 
@@ -57,17 +73,20 @@
       background-color: rgba(17, 17, 17, 0.8);
       padding: 5px;
 
-            color: #f9f9f9;
-            font-size: 25px;
-            letter-spacing: 5px;
-            font-family: sans-serif;
-            text-transform: lowercase;
+      color: #f9f9f9;
+      font-size: 25px;
+      letter-spacing: 5px;
+      font-family: sans-serif;
+      text-transform: lowercase;
 
       position: absolute;
 
-          top: 50%; /* pushes the top left corner down*/
-          left: 50%; /* pushes the top left corner to the middle of the screen */
-          transform: translate(-50%, -50%); /* move it back 50% and moves it up 50% */
+      top: 50%;
+      /* pushes the top left corner down*/
+      left: 50%;
+      /* pushes the top left corner to the middle of the screen */
+      transform: translate(-50%, -50%);
+      /* move it back 50% and moves it up 50% */
     }
 
     .borderContainer {
@@ -78,14 +97,51 @@
     }
 
 
-/* ABOUT SECTION STYLING */
+    /* ABOUT SECTION STYLING */
+
     .aboutSection {
-      background-color: #222;
       height: 800px;
     }
 
+    .leftSide {
+      background-color: #222;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* PORTFOLIO SECTION STYLING */
+    .leftSide p {
+      color: #eee;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    .leftSide p:first-child {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .rightSide {
+      height: 400px;
+      background-color: #333;
+    }
+
+    .rightSide p:first-child {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .rightSide p {
+      color: #eee;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    /* PORTFOLIO SECTION STYLING */
 
     .portfolioSection {
       background-color: #eee;
@@ -94,7 +150,7 @@
     }
 
 
-/* TESTIMONIAL SECTION  STYLING */
+    /* TESTIMONIAL SECTION  STYLING */
 
     .testimonialSection {
       /*spaces each item around*/
@@ -105,23 +161,78 @@
       margin-bottom: 70px;
     }
 
-.subheaderAlign{
-  margin-top: 70px;
-  text-align: center;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+    .subheaderAlign {
+      margin-top: 70px;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* CONTACT SECTION STYLING */
+
+    .contactSection {
+      background-color: #aaa;
+      height: 500px;
+      background-attachment: fixed; /*this does the P A R A L L A X*/
+      display: flex;
+      justify-content: center;
+    }
+
+    .contactSection li a{
+      display: block;
+      border: 3px solid black;
+      text-decoration: none;
+      color: black;
+    }
+
+    .contactSection li{
+      list-style-type: none;
+    }
+
+    .contactLine {
+      display: flex;
+      justify-content: center;
+      font-size: 1em;
+      padding: 20px;
+    }
+
+    .contactLinkStyle {
+      text-decoration: none;
+      color: black;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contactLinkStyle:hover{
+      background-color: black;
+-webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /*adds a nice shadow effect*/
+color: white;
+-webkit-transition: background 0.5s ease-in-out, color 0.2s ease-in-out;
+transition: background 0.5s ease-in-out, color 0.2s ease-in-out;
 }
 
-/* CONTACT SECTION STYLING */
+    }
 
-.contactSection{
-  background-color: #aaa;
-  height: 700px;
-  background-attachment: fixed;
-  /*this does the P A R A L L A X*/
+
+.contactBox{
+  list-style-type: none;
+  colour: black;
+  display: block;
+  padding: 28px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 960px;
 }
-  </style>
+
+.contactBox:hover{
+
+}
+
+
+
+</style>
 
 
 </head>
@@ -159,13 +270,32 @@
 
   <div class="imageParallax1">
     <div class="border-container">
-      <span class="parallax-text">We're ready when you are.
+      <span class="parallax-text">lorem Ipsum
         </span>
     </div>
   </div>
 
 
   <div class="aboutSection" id="aboutMe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="subheaderAlign">About Me</h2>
+        </div>
+
+        <div class="col-md-6 leftSide">
+          <p>Creativity is what I strive for.</p>
+          <p>Hammock talk come soon. Don’t ever play yourself. Lion! The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Wraith talk. They key is to have every key,
+            the key to open every door. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Give thanks to the most high.</p>
+        </div>
+        <div class="col-md-6 rightSide">
+          <p>Kick bubblegum and eat ass. And I'm all out of ASS</p>
+          <p>Hammock talk come soon. Don’t ever play yourself. Lion! The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Wraith talk. They key is to have every key,
+            the key to open every door. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Give thanks to the most high.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="imageParallax2">
@@ -176,15 +306,22 @@
   </div>
 
 
-    <div class="portfolioSection" id="portfolio">
-    </div>
-
-    <div class="imageParallax3">
-      <div class="border-container">
-        <span class="parallax-text">We're ready when you are.
-          </span>
+  <div class="portfolioSection" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="subheaderAlign">Testimonials</h2>
+        </div>
       </div>
     </div>
+  </div>
+
+  <div class="imageParallax3">
+    <div class="border-container">
+      <span class="parallax-text">lorem Ipsum
+          </span>
+    </div>
+  </div>
 
   <div class="container">
     <div class="row">
@@ -237,6 +374,32 @@
   </div>
   <div class="contactSection" id="contactMe">
 
+    <ul>
+      <li class="contactBox">
+        <a href="#" class="contactLinkStyle">
+          <div class="contactLine">
+            647-473-1010
+          </div>
+        </a>
+      </li>
+      <li class="contactBox">
+        <a href="#" class="contactLinkStyle">
+          <div class="contactLine">
+            john10mendoza@gmail.com
+          </div>
+        </a>
+      </li>
+      <li class="contactBox">
+        <a href="#" class="contactLinkStyle">
+          <div class="contactLine">
+            Twitter & Instagram: @iblibs
+          </div>
+        </a>
+      </li>
+    </ul>
+
+
+
   </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -245,7 +408,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- Scroll Magic -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 </body>
 
 </html>

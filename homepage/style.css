@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600');
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.headerSection {
+  background-color: #222;
+  height: 800px; /*size of the video frame*/
+
+  /*makes sure the video fits*/
+  position: relative; /*keeps it from overlapping into the About Section*/
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+
+
+
+  /*old full size background image*/
+  /* background-image: url(/Users/johnmendoza/Desktop/iblibs.github.io/o-annie-spratt-197809.jpg); */
+  /* background-position: center center;
+  background-repeat: none;
+  background-size: cover;*/
+}
+
+.bg-video #player { /* gives the video its full size*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+
+
+
+.subheaderAlign {
+  margin-top: 70px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAV BAR STYLING */
+
+.nav-item {
+  margin-left: 50px;
+}
+
+/* PARALLAX IMAGE STYLING */
+
+.imageParallax1, .imageParallax2, .imageParallax3, .imageParallax4 {
+  background-image: url(content/o-annie-spratt-197809.jpg);
+  min-height: 400px;
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*this does the P A R A L L A X*/
+}
+
+.bannerParallax {
+  background-color: #aaa;
+  height: 400px;
+  background-attachment: fixed;
+  /*this does the P A R A L L A X*/
+}
+
+.parallax-text {
+  background-color: rgba(17, 17, 17, 0.8);
+  padding: 5px;
+  color: #f9f9f9;
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  text-transform: lowercase;
+  position: absolute;
+  top: 50%;
+  /* pushes the top left corner down*/
+  left: 50%;
+  /* pushes the top left corner to the middle of the screen */
+  transform: translate(-50%, -50%);
+  /* move it back 50% and moves it up 50% */
+}
+
+.borderContainer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+/* ABOUT SECTION STYLING */
+
+.aboutSection {
+  height: 800px;
+  z-index: 4;
+}
+
+.leftSide {
+  background-color: #222;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftSide p {
+  color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.leftSide p:first-child {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.rightSide {
+  height: 400px;
+  background-color: #333;
+}
+
+.rightSide p:first-child {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.rightSide p {
+  color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* PORTFOLIO SECTION STYLING */
+
+.portfolioSection {
+  background-color: #eee;
+  height: 800px;
+}
+
+/* TESTIMONIAL SECTION  STYLING */
+
+.testimonialSection {
+  /*spaces each item around*/
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 25px;
+  margin-bottom: 70px;
+  max-height: 800px;
+}
+
+.subheaderAlign {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#testimonials {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+/* CONTACT SECTION STYLING */
+
+.contactSection {
+  background-color: #fff;
+  height: 500px;
+  background-attachment: fixed;
+  /*this does the P A R A L L A X*/
+  display: flex;
+  justify-content: center;
+}
+
+.contactSection li a {
+  display: block;
+  border: 3px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.contactSection li {
+  list-style-type: none;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 460px;
+}
+
+.contactLine {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  padding: 30px;
+}
+
+.contactLinkStyle {
+  text-decoration: none;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactLinkStyle:hover {
+  background-color: black;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /*adds a nice shadow effect*/
+  color: white;
+  -webkit-transition: background 0.5s ease-in-out, color 0.2s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+
+}
+
+.contactBox {
+  colour: black;
+  display: block;
+  padding: 28px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 960px;
+}
+
+.contactBox:hover {}

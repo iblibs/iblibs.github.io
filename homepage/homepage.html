@@ -32,7 +32,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark  justify-content-between">
     <a class="navbar-brand" href="#">John Mendoza</a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav navFlex">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -44,6 +44,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#accolades">Accolades</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contactMe">Contact</a>
@@ -65,18 +68,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="subheaderAlign">About Me</h2>
+          <h2 class="subheaderAlign" id="aboutHeading">About Me</h2>
         </div>
 
         <div class="col-md-6 leftSide">
-          <p>Creativity is what I strive for.</p>
-          <p>Hammock talk come soon. Don’t ever play yourself. Lion! The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Wraith talk. They key is to have every key,
-            the key to open every door. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Give thanks to the most high.</p>
+          <img id="portfolioPhoto" src="content/portfolioPhoto.jpg" alt="ech">
         </div>
-        <div class="col-md-6 rightSide">
-          <p>Kick bubblegum and eat ass. And I'm all out of ASS</p>
-          <p>Hammock talk come soon. Don’t ever play yourself. Lion! The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Wraith talk. They key is to have every key,
-            the key to open every door. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Give thanks to the most high.</p>
+        <div class="col-sm-5 rightSide">
+          <p>Hi there!</p>
+          <p>My name is John Mendoza and I am a content creator with an extensive background in filmmaking, photography, voice-over work, graphic design and more.</p>
+          <p>I've worked on several projects and specialize specifically in working with companies on larger projects.
+            No matter if the project is small or large, I can adapt to whatever project.</p>
+            <p>Currently, I attend the University of Guelph-Humber in the Media Studies program.</p>
         </div>
       </div>
     </div>
@@ -118,7 +121,7 @@
       </div>
     </div>
     <div class="col-sm-12 card-deck testimonialSection">
-      <div class="card w-50" style="width: 20rem;">
+      <div class="card w-50 cardShadow" style="width: 20rem;">
         <img class="card-img-top" src="https://via.placeholder.com/300x300" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Andrino Giardino</h5>
@@ -127,7 +130,7 @@
           <a href="#" class="btn btn-primary">Contact</a>
         </div>
       </div>
-      <div class="card" style="width: 20rem;">
+      <div class="card w-50 cardShadow" style="width: 20rem;">
         <img class="card-img-top" src="https://via.placeholder.com/300x300" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Stephen Wong</h5>
@@ -139,7 +142,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="width: 20rem;">
+      <div class="card  w-50 cardShadow" style="width: 20rem;">
         <img class="card-img-top" src="https://via.placeholder.com/300x300" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Arvin Chabbra</h5>
@@ -159,8 +162,24 @@
         </span>
     </div>
   </div>
-  <div class="contactSection" id="contactMe">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="subheaderAlign" id="accolades">Accolades</h2>
+        <!--INSERT LOGOS HERE -->
+        <p>Lorem Khaled Ipsum is a major key to success. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise.</p>
+        <p>They key is to have every key, the key to open every door. They never said winning was easy. Some people can’t handle success, I can. The key is to drink coconut, fresh coconut, trust me. Wraith talk. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. To be successful you’ve got to work hard, to make history, simple, you’ve got to make it. They don’t want us to win. Let’s see what Chef Dee got that they don’t want us to eat. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion!</p>
+      </div>
+    </div>
+  </div>
 
+  <div class="imageParallax5">
+    <div class="border-container">
+      <span class="parallax-text">Let's make some magic.
+        </span>
+    </div>
+  </div>
+  <div class="contactSection" id="contactMe">
     <ul>
       <li class="contactBox">
         <a href="#" class="contactLinkStyle">
@@ -184,9 +203,6 @@
         </a>
       </li>
     </ul>
-
-
-
   </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -204,7 +220,7 @@
   var player;
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      videoId: 'LS-ErOKpO4E', //change video ID from URLs to change the video
+      videoId: 'hh7Gu3MsGH8', //change video ID from URLs to change the video
       playerVars: {
         autoplay: 1, //this makes it play immediately upon loading
         controls: 0, //no controls are visible

@@ -287,10 +287,10 @@
             if ($(this).css("opacity") == 0) {
               $(this).fadeTo(200, 1);
             }
-          } else { //object goes out of view (scrolling up)
-            if ($(this).css("opacity") == 1) {
-              $(this).fadeTo(200, 0);
-            }
+          // } else { //object goes out of view (scrolling up)
+          //   if ($(this).css("opacity") == 1) {
+          //     $(this).fadeTo(200, 0);
+          //   } //got rid one of the scroll glitch
           }
         });
       }).scroll(); //invoke scroll-handler on page-load

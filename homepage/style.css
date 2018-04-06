@@ -187,7 +187,7 @@ background-image: url(content/parallax/business.jpg);
 }
 
 .rightSide {
-  height: 500px;
+  height: 550px;
   margin-left: 50px;
   background-color: #222;
   -webkit-box-shadow: 5px 6px 15px 2px rgba(34,34,2,0.6);
@@ -207,7 +207,6 @@ box-shadow: 5px 6px 15px 2px rgba(34,34,2,0.6);
   margin-right: auto;
   padding: 10px;
   font-size: 16px;
-  line-height: 26px;
   margin-bottom: 15px;
 }
 
